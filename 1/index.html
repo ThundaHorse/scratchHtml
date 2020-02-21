@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Yeet</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="example">
+      <div class="container">
+        <h1>Hi there, what is your name?</h1>
+        <form>
+          <input v-model="userName" placeholder="..." type="text" />
+          <input
+            type="submit"
+            placeholder="Submit"
+            @click.prevent="submitName()"
+          />
+        </form>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Hello there,</h1>
+          </div>
+          <div class="col">
+            <h1>'<b>{{temp}}</b>'</h1>
+          </div>
+          <div class="col">
+            <h1>How do you do?</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.container {
+  margin: 5%;
+  text-align: center;
+}
+.container-fluid {
+  margin: 5% 3%;
+  width: 100%;
+  position: relative;
+}
+.row {
+  height: 100%;
+  column-count: 3;
+  /* column-gap: 40px; */
+  column-rule: 4px solid black;
+  column-fill: auto;
+  justify-content: center;
+}
+.col {
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+@media only screen and (max-width: 885px),
+  only screen and (max-device-width: 480px) {
+  .col {
+    width: 100%;
+    float: none;
+    border: 2px solid transparent;
+  }
+  .row {
+    column-count: 1;
+    column-fill: auto;
+  }
+}
